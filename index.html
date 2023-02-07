@@ -74,6 +74,20 @@
             <td>15</td>
         </tr>
     </table>
+    <!-- Code Display-->
+    <hr>
+    <h4>Display the code</h4>
+    <blockquote cite ="https://stackoverflow.com/questions/2155453/jquery-toggle-text">
+        jQuery Toggle Text?
+    </blockquote>
+    <pre>
+        $("#more-less-options-button").click(function() {
+            var txt = $("#extra-options").is(':visible') ? 'more options' : 'less options';
+            $("#more-less-options-button").text(txt);
+            $("#extra-options").slideToggle();
+       });
+    </pre>
+
 </body>
 
 </html>
